@@ -1,0 +1,22 @@
+{
+  "name": "OfficeHour",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "Day": {
+      "type": "string",
+      "required": true
+    },
+    "Hours": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

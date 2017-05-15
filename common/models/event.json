@@ -1,0 +1,44 @@
+{
+  "name": "Event",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "Date": {
+      "type": "date",
+      "required": true
+    },
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Resume": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "string"
+    },
+    "ImageUrl": {
+      "type": "string"
+    },
+    "ImageUrls": {
+      "type": [
+        "string"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}

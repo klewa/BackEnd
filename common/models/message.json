@@ -1,0 +1,45 @@
+{
+  "name": "Message",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "PublicationDate": {
+      "type": "date",
+      "required": true
+    },
+    "ValidityDate": {
+      "type": "date",
+      "required": true
+    },
+    "Audience": {
+      "type": "string",
+      "required": true
+    },
+    "Message": {
+      "type": "string",
+      "required": true
+    },
+    "IsRestricted": {
+      "type": "boolean",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}

@@ -1,0 +1,87 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "MongoDB",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "MongoDB",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "MongoDB",
+    "public": false
+  },
+  "Employee": {
+    "dataSource": "MongoDB",
+    "public": true
+  },
+  "Event": {
+    "dataSource": "MongoDB",
+    "public": true
+  },
+  "PrintOut": {
+    "dataSource": "MongoDB",
+    "public": true
+  },
+  "Message": {
+    "dataSource": "MongoDB",
+    "public": true
+  },
+  "Article": {
+    "dataSource": "MongoDB",
+    "public": true
+  },
+  "Image": {
+    "dataSource": "MongoDB",
+    "public": true
+  },
+  "Address": {
+    "dataSource": "MongoDB",
+    "public": true
+  },
+  "OfficeHour": {
+    "dataSource": "MongoDB",
+    "public": true
+  },
+  "Enum": {
+    "dataSource": "MongoDB",
+    "public": true
+  },
+  "MessageAudienceEnum": {
+    "dataSource": "MongoDB",
+    "public": true
+  },
+  "DisciplineEnum": {
+    "dataSource": "MongoDB",
+    "public": true
+  },
+  "Attachment": {
+    "dataSource": "storage",
+    "public": true
+  },
+  "SchoolUser": {
+    "dataSource": "MongoDB",
+    "public": true
+  }
+}

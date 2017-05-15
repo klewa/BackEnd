@@ -1,0 +1,48 @@
+{
+  "name": "Address",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "Line1": {
+      "type": "string"
+    },
+    "Line2": {
+      "type": "string"
+    },
+    "Line3": {
+      "type": "string"
+    },
+    "PostalCode": {
+      "type": "string"
+    },
+    "City": {
+      "type": "string"
+    },
+    "Telephone": {
+      "type": "string"
+    },
+    "Mobile": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "string"
+    },
+    "Skype": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}

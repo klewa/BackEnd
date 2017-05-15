@@ -1,0 +1,37 @@
+{
+  "name": "OfficeHour",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "Day": {
+      "type": "string",
+      "required": true
+    },
+    "Hours": {
+      "type": "string",
+      "required": true
+    },
+    "Type": {
+      "type": "string",
+      "required": true
+    },
+    "OrderNumber": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+ "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}

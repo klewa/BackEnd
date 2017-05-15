@@ -1,0 +1,42 @@
+{
+  "name": "Employee",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "IsTeacher": {
+      "type": "boolean",
+      "required": true
+    },
+    "Discipline": {
+      "type": "string"
+    },
+    "Image": {
+      "type": "string"
+    },
+    "Biography": {
+      "type": "string"
+    },
+    "Sex": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}

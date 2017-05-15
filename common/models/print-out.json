@@ -1,0 +1,41 @@
+{
+  "name": "PrintOut",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Resume": {
+      "type": "string"
+    },
+    "Key": {
+      "type": "string",
+      "required": true
+    },
+    "Url": {
+      "type": "string",
+      "required": false
+    },
+    "Size": {
+      "type": "number",
+      "required": false,
+      "default": 0
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}
